@@ -10,7 +10,7 @@ Route::get('/', function () {
 Route::group(['prefix'=>'yonetim'],function (){
     Route::get('/',[\App\Http\Controllers\YonetimController::class,'index']);
 });
-    
+           
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
